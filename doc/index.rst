@@ -82,6 +82,6 @@ Autoren
 
 * Jakob Fischer – Grünfischer Consulting (Programmierung)
 * Wolf Drechsel – Komponentenkontor Berlin GmbH (Dokumentation)
-* MDS - Original Modul Skr04
+
 
 
