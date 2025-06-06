@@ -6,7 +6,9 @@ from configparser import ConfigParser
 
 from setuptools import find_packages, setup
 
-MODULE2PREFIX = {}
+MODULE2PREFIX = {
+    'account_de_skr04': 'mds',
+}
 
 
 def read(fname):
@@ -48,7 +50,7 @@ tests_require = []
 
 setup(name=name,
     version=version,
-    description='Extends the account_de_skr04 module (maintainer:mds) with taxes and taxe codes for easy tax reporting.',
+    description='Extends the account_de_skr04 module (mamaintained by: Martin Data Service GmbH Berlin) with taxes and taxe codes for easy tax reporting.',
     long_description=read('README.rst'),
     author='Grünfischer Consulting',
     author_email='jakob.fischer@gruenfischer.de',
