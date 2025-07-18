@@ -3,13 +3,11 @@ import io
 import os
 import re
 from configparser import ConfigParser
-
 from setuptools import find_packages, setup
 
 MODULE2PREFIX = {
     'account_de_skr04': 'gf_mds',
 }
-
 
 def read(fname):
     content = io.open(
@@ -19,13 +17,11 @@ def read(fname):
         r'(?m)^\.\. toctree::\r?\n((^$|^\s.*$)\r?\n)*', '', content)
     return content
 
-
 def get_require_version(name):
     require = '%s >= %s.%s, < %s.%s'
     require %= (name, major_version, minor_version,
-        major_version, minor_version + 1)
+                major_version, minor_version + 1)
     return require
-
 
 config = ConfigParser()
 config.read_file(open(os.path.join(os.path.dirname(__file__), 'tryton.cfg')))
@@ -33,41 +29,48 @@ info = dict(config.items('tryton'))
 for key in ('depends', 'extras_depend', 'xml'):
     if key in info:
         info[key] = info[key].strip().splitlines()
+
 version = info.get('version', '0.0.1')
 major_version, minor_version, _ = version.split('.', 2)
 major_version = int(major_version)
 minor_version = int(minor_version)
 name = 'gf_account_de_skr04_patch'
 
-requires = []
+# ⚠️ fix: replace PyPI dependency with GitHub direct link
+requires = [
+    "mds-account-de-skr04 @ git+https://github.com/gruenfischer/gf_mds_account_de_skr04.git@v7.4.0",
+    get_require_version('trytond'),
+]
+
 for dep in info.get('depends', []):
     if not re.match(r'(ir|res)(\W|$)', dep):
         prefix = MODULE2PREFIX.get(dep, 'trytond')
         requires.append(get_require_version('%s_%s' % (prefix, dep)))
-requires.append(get_require_version('trytond'))
-requires.append("mds-account-de-skr04 >= 7.4.0")
 
 tests_require = []
 
-setup(name=name,
+setup(
+    name=name,
     version=version,
-    description='Extends the account_de_skr04 module (mamaintained by: Martin Data Service GmbH Berlin) with taxes and taxe codes for easy tax reporting.',
+    description='Extends the account_de_skr04 module (maintained by Martin Data Service GmbH Berlin) with taxes and tax codes for easy tax reporting.',
     long_description=read('README.rst'),
     author='Grünfischer Consulting',
     author_email='jakob.fischer@gruenfischer.de',
-    url='https://www.grünfischer.de',
+    url='https://www.gruenfischer.de',
     keywords='accounting tax skr04 Tryton',
     package_dir={'trytond.modules.account_de_skr04_patch': '.'},
     packages=(
         ['trytond.modules.account_de_skr04_patch']
         + ['trytond.modules.account_de_skr04_patch.%s' % p
             for p in find_packages()]
-        ),
+    ),
     package_data={
-        'trytond.modules.account_de_skr04_patch': (info.get('xml', [])
+        'trytond.modules.account_de_skr04_patch': (
+            info.get('xml', [])
             + ['tryton.cfg', 'view/*.xml', 'locale/*.po', '*.fodt',
-                'icons/*.svg', 'tests/*.rst', 'tests/*.json']),
-        },
+               'icons/*.svg', 'tests/*.rst', 'tests/*.json']
+        ),
+    },
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Plugins',
@@ -75,29 +78,8 @@ setup(name=name,
         'Intended Audience :: Developers',
         'Intended Audience :: Financial and Insurance Industry',
         'Intended Audience :: Legal Industry',
-        'License :: OSI Approved :: '
-        'GNU General Public License v3 or later (GPLv3+)',
-        'Natural Language :: Bulgarian',
-        'Natural Language :: Catalan',
-        'Natural Language :: Chinese (Simplified)',
-        'Natural Language :: Czech',
-        'Natural Language :: Dutch',
-        'Natural Language :: English',
-        'Natural Language :: Finnish',
-        'Natural Language :: French',
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
         'Natural Language :: German',
-        'Natural Language :: Hungarian',
-        'Natural Language :: Indonesian',
-        'Natural Language :: Italian',
-        'Natural Language :: Persian',
-        'Natural Language :: Polish',
-        'Natural Language :: Portuguese (Brazilian)',
-        'Natural Language :: Romanian',
-        'Natural Language :: Russian',
-        'Natural Language :: Slovenian',
-        'Natural Language :: Spanish',
-        'Natural Language :: Turkish',
-        'Natural Language :: Ukrainian',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.9',
@@ -107,16 +89,16 @@ setup(name=name,
         'Programming Language :: Python :: 3.13',
         'Programming Language :: Python :: Implementation :: CPython',
         'Topic :: Office/Business',
-        ],
+    ],
     license='GPL-3',
     python_requires='>=3.9',
     install_requires=requires,
     extras_require={
         'test': tests_require,
-        },
+    },
     zip_safe=False,
     entry_points="""
     [trytond.modules]
     account_de_skr04_patch = trytond.modules.account_de_skr04_patch
-    """,  # noqa: E501
-    )
+    """,
+)
