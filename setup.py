@@ -7,7 +7,7 @@ from configparser import ConfigParser
 from setuptools import find_packages, setup
 
 MODULE2PREFIX = {
-    'account_de_skr04': 'gf',
+    'account_de_skr04': 'gf_mds',
 }
 
 
