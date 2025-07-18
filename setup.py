@@ -38,7 +38,7 @@ name = 'gf_account_de_skr04_patch'
 
 # ⚠️ fix: replace PyPI dependency with GitHub direct link
 requires = [
-    "mds-account-de-skr04 @ git+https://github.com/gruenfischer/gf_mds_account_de_skr04.git@v7.4.0",
+    "mds-account-de-skr04 @ git+https://github.com/gruenfischer/gf_mds_account_de_skr04.git@v7.4.3",
     get_require_version('trytond'),
 ]
 
