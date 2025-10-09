@@ -34,11 +34,11 @@ version = info.get('version', '0.0.1')
 major_version, minor_version, _ = version.split('.', 2)
 major_version = int(major_version)
 minor_version = int(minor_version)
-name = 'gf_account_de_skr04_patch'
+name = 'gf-account_de_skr04_patch'
 
 # ⚠️ fix: replace PyPI dependency with GitHub direct link
 requires = [
-    "gf-mds-account-de-skr04 @ git+https://github.com/gruenfischer/gf_mds_account_de_skr04.git@v7.4.3",
+    "gf-mds-account-de-skr04",
     get_require_version('trytond'),
 ]
 

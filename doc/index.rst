@@ -67,16 +67,6 @@ Folgende Schritte sind erforderlich:
 4. "alte" Umsatzsteuern durch neue ersetzen:
 
  
-5. ...
-
-
-Ausblick
------
-
-* auf Anforderung: Implementierung SKR42 und SKR14
-* wünschenswert wäre ein einheitlicher "SKR_DE", der kompakt alle üblichen Standardkontenrahmen (03, 04, 42, 14) enthält. 
-
-
 Autoren
 -----
 
