@@ -546,15 +546,22 @@
         <field name="amount">base</field>
         <field name="type">credit</field>
     </record>
+    <!--
+    Ziffer 43 (BG43) erfasst steuerfreie Umsätze mit Vorsteuerabzug, insbesondere
+    Ausfuhrlieferungen in Drittländer (z. B. Schweiz, USA) sowie bestimmte internationale
+    Beförderungs- und sonstige nach § 4 Nr. 1a, 2–7 UStG steuerbefreite Leistungen.
+    Die Nettobeträge (ohne Umsatzsteuer) werden hier ausgewiesen; der Vorsteuerabzug
+    bleibt erhalten.
+    -->
     <record model="account.tax.code.line.template" id="tcl_BG45_tax_innner_au_delivery_+_base_invoice">
-        <field name="code" ref="new_tax_code_BG45"/>
+        <field name="code" ref="new_tax_code_BG43"/>
         <field name="tax" ref="tax_innner_au_delivery"/>
         <field name="operator">+</field>
         <field name="amount">base</field>
         <field name="type">invoice</field>
     </record>
     <record model="account.tax.code.line.template" id="tcl_BG45_tax_innner_au_delivery_-_base_credit">
-        <field name="code" ref="new_tax_code_BG45"/>
+        <field name="code" ref="new_tax_code_BG43"/>
         <field name="tax" ref="tax_innner_au_delivery"/>
         <field name="operator">-</field>
         <field name="amount">base</field>

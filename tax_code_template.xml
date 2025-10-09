@@ -1,4 +1,7 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" ?>
+<!-- This file is part of the gt_account-de-skr04-module for Tryton from Gruenfischer Consulting.
+ The COPYRIGHT file at the top level of
+ this repository contains the full copyright notices and license terms.-->
 <tryton>
   <data>
     <record id="new_tax_code_BGSALDOSALE" model="account.tax.code.template">
@@ -22,6 +25,12 @@
         <field name="name">B: Innergemeinschaftliche Lieferungen (§ 4 Nummer 1 Buchstabe b UStG) an Abnehmer mit USt.-ID</field>
         <field name="parent" ref="new_tax_code_BGSALDOSALE" />
         <field name="code">41</field>
+        <field name="account" ref="account_de_skr04.root_de" />
+      </record>
+      <record id="new_tax_code_BG43" model="account.tax.code.template">
+        <field name="name">B: Weitere steuerfreie Umsätze mit Vorsteuerabzug(§ 4 Nummer 1 Buchstabe b UStG) an Abnehmer mit USt.-ID</field>
+        <field name="parent" ref="new_tax_code_BGSALDOSALE" />
+        <field name="code">43</field>
         <field name="account" ref="account_de_skr04.root_de" />
       </record>
       <record id="new_tax_code_BG45" model="account.tax.code.template">
