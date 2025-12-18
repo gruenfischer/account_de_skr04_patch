@@ -53,6 +53,7 @@ setup(
     version=version,
     description='Extends the account_de_skr04 module (maintained by Martin Data Service GmbH Berlin) with taxes and tax codes for easy tax reporting.',
     long_description=read('README.rst'),
+    long_description_content_type="text/x-rst",
     author='Grünfischer Consulting',
     author_email='jakob.fischer@gruenfischer.de',
     url='https://www.gruenfischer.de',
