@@ -82,7 +82,6 @@ setup(
         'Natural Language :: German',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: 3.12',
@@ -91,7 +90,7 @@ setup(
         'Topic :: Office/Business',
     ],
     license='GPL-3',
-    python_requires='>=3.9',
+    python_requires='>=3.10',
     install_requires=requires,
     extras_require={
         'test': tests_require,
