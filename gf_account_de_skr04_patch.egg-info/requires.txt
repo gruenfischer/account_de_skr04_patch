@@ -1,0 +1,6 @@
+trytond_account<7.1,>=7.0
+mds_account_de_skr04<7.1,>=7.0
+trytond<7.1,>=7.0
+mds-account-de-skr04
+
+[test]
