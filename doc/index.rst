@@ -30,7 +30,7 @@ Ergänzung des Moduls mds_accout_de_skr04:
 * Integration von Steuerregeln
 
 Berücksichtigte Szenarien
------
+-------------------------
 
 * Ein- und Verkauf von Waren und Dienstleistungen (sonstigen Leistungen) innerhalb von Deutschland,
     in die EU und in Drittländer
@@ -40,16 +40,16 @@ Berücksichtigte Szenarien
 * Reverse Charge im Inland
 
 U.A. nicht berücksichtigte Szenarien
------
+------------------------------------
 
 * Selbstimport von Waren mit eigener Zollnummer
-* Export in EU-Länder an Endverbraucher mit Jahresumsatz  > OSS Schwelle pro Kunde (OSS-Verfahren); das kann über das über Modul `trytond_account_tax_rule_country` geregelt werden
+* Export in EU-Länder an Endverbraucher mit Jahresumsatz  > OSS Schwelle pro Kunde (OSS-Verfahren); das kann über das über Modul ``trytond_account_tax_rule_country`` geregelt werden
 * grenzüberschreitender Handel mit steuerlich individuell behandelter Waren, wie Gold. 
 * ...
 
 
 Umstellung vom bisherigen SKR04
------
+-------------------------------
 
 Folgende Schritte sind erforderlich:
 
@@ -71,17 +71,16 @@ Folgende Schritte sind erforderlich:
 
 
 Ausblick
------
+--------
 
 * auf Anforderung: Implementierung SKR42 und SKR14
 * wünschenswert wäre ein einheitlicher "SKR_DE", der kompakt alle üblichen Standardkontenrahmen (03, 04, 42, 14) enthält. 
 
 
 Autoren
------
+-------
 
 * Jakob Fischer – Grünfischer Consulting (Programmierung)
 * Wolf Drechsel – Komponentenkontor Berlin GmbH (Dokumentation)
-
 
 
