@@ -1,0 +1,5 @@
+7.0.1 - 2026-05-19
+* Vereinheitlichte Tax-Namen in den Templates.
+* Benannte Parent-Steuern konsistent als "Steuerfall ...".
+* Verkuerzte und vereinheitlichte Child-Steuernamen.
+* Fuegte `tax_name_mapping.tsv` als Mapping von alten auf neue Tax-Namen hinzu.
