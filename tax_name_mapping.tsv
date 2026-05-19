@@ -1,0 +1,70 @@
+tax_id	old_name	new_name
+tax_de_delivery_13b	Umsatzsteuer Werklieferungen § 13b Abs. 5 UStG. 	Umsatzsteuer Werklieferungen §13b Abs. 5 UStG.
+tax_de_eu_delivery_service	Steuerfreie innergem. sonstige Leistung § 3a Absatz 2 UStG 	Steuerfreie innergem. sonstige Leistung §3a Absatz 2 UStG
+tax_de_ust_delivery_full_goods	Umsatzsteuer voller Satz Waren Inland	Steuerfall Verkauf Waren Inland 19 %
+tax_de_ust_delivery_19_goods	MwSt. 19% Waren	USt 19 % Waren
+tax_de_ust_delivery_erm_goods	Umsatzsteuer ermäßigter Satz Waren Inland	Steuerfall Verkauf Waren Inland 7 %
+tax_de_ust_delivery_7_goods	MwSt. 7% Waren	USt 7 % Waren
+tax_de_ust_delivery_free_goods	Umsatzsteuer steuerfreie Waren	Steuerfall Verkauf Waren Inland 0 %
+tax_de_ust_delivery_0_goods	MwSt. frei Waren	USt 0 % Waren
+tax_de_ust_delivery_full_service	Umsatzsteuer voller Satz sonstige Leistungen	Steuerfall Verkauf Leistungen Inland 19 %
+tax_de_ust_delivery_19	MwSt. 19% sonst. Leist.	USt 19 % Leistung
+tax_de_ust_delivery_erm_service	Umsatzsteuer ermäßigter Satz sonstige Leistungen 	Steuerfall Verkauf Leistungen Inland 7 %
+tax_de_ust_delivery_7	MwSt. 7% sonst. Leist.	USt 7 % Leistung
+tax_de_ust_delivery_free_service	Umsatzsteuer steuerfreie sonstige Leistungen	Steuerfall Verkauf Leistungen Inland 0 %
+tax_de_ust_delivery_0	MwSt. frei sonst. Leist.	USt 0 % Leistung
+tax_eu_s13b_abs1_19_vst_ust_new	Innergem. sonstige Leistung  §13b Abs 1 UStG VSt voll / USt voll 	Steuerfall EU-Leistung nach 13b 19 %
+tax_eu_s13b_abs1_19_vst_new	voll Vorsteuer erhaltenen EU-Leistungen §13b Abs.1	VSt 19 % EU-13b
+tax_eu_s13b_abs1_19_ust_new	voll Umsatzsteuer  erhaltenen EU-Leistungen §13b Abs.1	USt 19 % EU-13b
+tax_eu_s13b_abs1_7_vst_ust_new	Innergem. sonstige Leistung  §13b Abs 1 UStG VSt erm. / USt erm.	Steuerfall EU-Leistung nach 13b 7 %
+tax_eu_s13b_abs1_7_vst_new	erm. Vorsteuer erhaltenen EU-Leistungen §13b Abs.1	VSt 7 % EU-13b
+tax_eu_s13b_abs1_7_ust_new	erm. Umsatzsteuer erhaltenen EU-Leistungen §13b Abs.1	USt 7 % EU-13b
+tax_eu_s13b_abs1_0_vst_ust_new	Innergem. sonstige Leistung  §13b Abs 1 UStG VSt frei / USt frei	Steuerfall EU-Leistung nach 13b 0 %
+tax_eu_s13b_abs0_vst_new	frei Vorsteuer erhaltenen EU-Leistungen §13b Abs.1	VSt 0 % EU-13b
+tax_eu_s13b_abs1_0_ust_new	frei Umsatzsteuer  erhaltenen EU-Leistungen §13b Abs.1	USt 0 % EU-13b
+tax_dritt_s13b_abs2_19_vst_ust_new	sonstige Leistung Drittland §13b Abs 2 UStG VSt voll / USt voll	Steuerfall Drittlandleistung nach 13b 19 %
+tax_dritt_s13b_abs2_19_vst_new	voll Vorsteuer Drittland Leistungen §13b Abs.2	VSt 19 % Dritt-13b
+tax_dritt_s13b_abs2_19_ust_new	voll Umsatzsteuer Drittland Leistungen §13b Abs.2	USt 19 % Dritt-13b
+tax_dritt_s13b_abs2_7_vst_ust_new	sonstige Leistung Drittland §13b Abs 2 UStG VSt erm. / USt erm.	Steuerfall Drittlandleistung nach 13b 7 %
+tax_dritt_s13b_abs2_7_vst_new	erm. Vorsteuer Drittland Leistungen §13b Abs.2	VSt 7 % Dritt-13b
+tax_dritt_s13b_abs2_7_ust_new	erm. Umsatzsteuer Drittland Leistungen §13b Abs.2	USt 7 % Dritt-13b
+tax_dritt_s13b_abs2_0_vst_ust_new	sonstige Leistung Drittland §13b Abs 2 UStG VSt frei / USt frei	Steuerfall Drittlandleistung nach 13b 0 %
+tax_dritt_s13b_abs2_0_vst_new	frei Vorsteuer Drittland Leistungen §13b Abs.2	VSt 0 % Dritt-13b
+tax_dritt_s13b_abs2_0_ust_new	frei Umsatzsteuer Drittland Leistungen §13b Abs.2	USt 0 % Dritt-13b
+tax_de_vst_purchase_full_service	Vorsteuer voll sonstige Leistung	Steuerfall Einkauf Leistungen Inland 19 %
+tax_de_vst_purchase_19_service	Vorsteuer voll sonstige Leistung	VSt 19 % Leistung
+tax_de_vst_purchase_ermaessigt_service	Vorsteuer erm. sonstige Leistung	Steuerfall Einkauf Leistungen Inland 7 %
+tax_de_vst_purchase_7_service	Vorsteuer erm. sonstige Leistung	VSt 7 % Leistung
+tax_de_vst_purchase_frei_service	Vorsteuer frei sonstige Leistung	Steuerfall Einkauf Leistungen Inland 0 %
+tax_de_vst_purchase_0_service	Vorsteuer frei sonstige Leistung	VSt 0 % Leistung
+tax_de_vst_purchase_full_goods	Vorsteuer voll Waren	Steuerfall Einkauf Waren Inland 19 %
+tax_de_vst_purchase_19_goods	Vorsteuer voll Waren	VSt 19 % Waren
+tax_de_vst_purchase_ermaessigt_goods	Vorsteuer erm. Waren	Steuerfall Einkauf Waren Inland 7 %
+tax_de_vst_purchase_7_goods	Vorsteuer erm. Waren	VSt 7 % Waren
+tax_de_vst_purchase_free_goods	Vorsteuer frei Waren	Steuerfall Einkauf Waren Inland 0 %
+tax_de_vst_purchase_0_goods	Vorsteuer frei Waren	VSt 0 % Waren
+tax_eu_inner_erwerb_19_vst_ust_new	Innergemeinschaftlicher Erwerb VSt voll / USt voll 	Steuerfall Innergemeinschaftlicher Erwerb 19 %
+tax_eu_inner_erwerb_19_vst_new	voll Vorsteuer Innergemeinschaftlicher Erwerb 	VSt 19 % igE
+tax_eu_inner_erwerb_19_ust_new	voll Umsatzsteuer Innergemeinschaftlicher Erwerb 	USt 19 % igE
+tax_eu_inner_erwerb_7_vst_ust_new	Innergemeinschaftlicher Erwerb VSt erm. / USt erm.	Steuerfall Innergemeinschaftlicher Erwerb 7 %
+tax_eu_inner_erwerb_7_vst_new	erm. Vorsteuer Innergemeinschaftlicher Erwerb	VSt 7 % igE
+tax_eu_inner_erwerb_7_ust_new	erm. Umsatzsteuer Innergemeinschaftlicher Erwerb	USt 7 % igE
+tax_eu_inner_erwerb_0_vst_ust_new	Innergemeinschaftlicher Erwerb VSt frei / USt frei	Steuerfall Innergemeinschaftlicher Erwerb 0 %
+tax_eu_inner_erwerb_0_vst_new	frei Vorsteuer Innergemeinschaftlicher Erwerb	VSt 0 % igE
+tax_eu_inner_erwerb_0_ust_new	frei Umsatzsteuer Innergemeinschaftlicher Erwerb	USt 0 % igE
+helper_tax_dritt_vst_purchase_19_goods	Steuerfiktion, um Kontenregel (nach 5551) auszulösen, Betrag frei; Bezug voll	Hilfssteuer Import Waren 19 %
+helper_tax_dritt_vst_purchase_7_goods	Steuerfiktion, um Kontenregel (nach 5551) auszulösen, Betrag frei; Bezug erm. 	Hilfssteuer Import Waren 7 %
+helper_tax_dritt_vst_purchase_0_goods	Steuerfiktion, um Kontenregel (nach 5551) auszulösen, Betrag frei; Bezug frei 	Hilfssteuer Import Waren 0 %
+tax_dritt_vst_purchase_full_goods_customs	Einfuhrumsatzsteuer voller Satz	Steuerfall Einfuhrumsatzsteuer 19 %
+tax_dritt_vst_purchase_19_goods_customs	Einfuhrumsatzsteuer voll	EUSt 19 %
+tax_dritt_vst_purchase_ermaessigt_goods_customs	Einfuhrumsatzsteuer ermäßigter Satz	Steuerfall Einfuhrumsatzsteuer 7 %
+tax_dritt_vst_purchase_7_goods_customs	Einfuhrumsatzsteuer erm.	EUSt 7 %
+tax_de_purchase_19_13b	Vorsteuer Standard Andere Leistung §13b Abs. 2 1,2,4 - 12	Steuerfall Inlandsleistung nach 13b 19 %
+tax_de_purchase_19_13b_VST	voll Vorsteuer erhaltenen DE-Leistungen §13b Abs.1	VSt 19 % Inland-13b
+tax_de_purchase_19_13b_UST	voll Umsatzsteuer  erhaltenen DE -Leistungen §13b Abs.1	USt 19 % Inland-13b
+tax_de_purchase_7_13b	Vorsteuer Standard Andere Leistung §13b Abs. 2 1,2,4 - 12	Steuerfall Inlandsleistung nach 13b 7 %
+tax_de_purchase_7_13b_VST	erm. Vorsteuer erhaltenen DE-Leistungen §13b Abs.1	VSt 7 % Inland-13b
+tax_de_purchase_7_13b_UST	erm. Umsatzsteuer  erhaltenen DE -Leistungen §13b Abs.1	USt 7 % Inland-13b
+tax_de_purchase_0_13b	Vorsteuer Standard Andere Leistung §13b Abs. 2 1,2,4 - 12	Steuerfall Inlandsleistung nach 13b 0 %
+tax_de_purchase_0_13b_VST	0frei Vorsteuer erhaltenen DE-Leistungen §13b Abs.1	VSt 0 % Inland-13b
+tax_de_purchase_0_13b_UST	frei Umsatzsteuer  erhaltenen DE -Leistungen §13b Abs.1	USt 0 % Inland-13b
